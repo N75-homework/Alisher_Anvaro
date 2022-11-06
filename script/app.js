@@ -1,77 +1,130 @@
+// 1.Задачи(
+// let a = prompt(`введите длиину в см`)
+// let result = a / 100;
+// alert(result + 'метр')
+
+
+
+
+// let m = prompt(`введиет массу в кг`)
+// let result = m / 1000;
+// alert(result + 'тонн')
+
+
+
+
+
+// let a = prompt(`Son kiriting`),
+// b = a%10,
+// c = (a - b) / 10.
+// alert(` ${a} soni ${c} onlik va ${b} birliklardan iborat`)
+
+
+
+
+// let a = prompt(`Son kiriting`),
+// c = ((a - a%10) / 10) + a%10
+// alert(`${a} sonini raqamlar yigindisi ${c} ga`)
+
+
+
+
+// let a = prompt(`Son kiriting`),
+// b = a%10,
+// c = (a - b) / 10,
+// d = b * c;
+// alert(`${a} sonini raqamlar yigindisi ${d} ga`)
+
+
+
+
+// let a = prompt('Вdедите 4х значное число'),
+// b = (a - a%100) / 100
+// alert(`число ${a} содержит ${b} сотен(ни)`);
+
+
+
+// var a = prompt('Kun boshidan necha sekund otdi');
+// var b = a / 60;
+// var c = a / 3600; 
+// alert(`Kun boshidan ${b} minut, ${c} soat otdi`);
+
+
+
+
 //  2.Задачи
-        // // 1-задача
-        // var numb = -12;
+
+
+
+        // 1-задача
+        // let numb = prompt(`Введите число`);
         // if(numb > 0){
-        //     console.log("число-положительное");
+        //     alert("число-положительное");
         // } else{
-        //     console.log("число-отрицательное");
+        //     alert("число-отрицательное");
             
         // }
         
         // // 2-Задача
 
-        // var num = 9
+        // let num = prompt(`Введите любое число`)
 
         // if (num % 2 == 0 ){
-        //     console.log("Число четное");
-        // } else{
-        //     console.log(" Число нечетное");
+        //     alert("Число четное");
+        // } else if(typeof(num) != 'number'){
+        //         alert (`Введите число`)
+        // }else {
+        //         alert(" Число нечетное");
         // }
 
 
-        // // 3-задача
-        // var a = 4;
-        // var b = 3;
+
+
+        
+        // 3-задача
+        // let a = prompt(`Введите а`),
+        //  b = prompt(`Введите b`);
         
         // if(a > 0 && b > 0){
-        //         console.log(`${a} > 0 и ${b} > 0`);
+        //         alert(`${a} > 0 и ${b} > 0`);
         // } else {
-        //         console.log("False");
+        //         alert("False");
 
         // }
+
 
 
 
         // 4-задача
-       //  var a = -1;      
-       //  var b = 3;
-       //  var c = 6;
+        // let a = prompt(`введите a`);
+        // let b = prompt(`введите b`);
+        // let c = prompt(`введите c`);
 
-       //  if(a < b && c > b && a < c){
-       //         console.log( a, b, c); 
-       //  }else if(b > c){
-       //         console.log("False (b больше c)");
-       //  }else if(a > b){
-       //         console.log("False(a больше b )");
-       //  }else if(a == c && a == b && b == c) {   
-       //         console.log("False(введите другие числа)");
-       //  }else {
-       //         console.log("b равно с");
-       //  }
+        // if(a < b && c > b && a < c){
+        //        alert(`${a} ${b} ${c}`); 
+        // }else if(b > c){
+        //        alert("False (b больше c)");
+        // }else if(a > b){
+        //        alert("False(a больше b )");
+        // }else if(a == c && a == b && b == c) {   
+        //        alert("False(введите другие числа)");
+        // }else{
+        //        alert("b равно с");
+        // }
         
-       //  5-задача.
-       // let a = 12,
-       //  b = -13,
-       //  c = -14,
-       //  d = -15;
-       // if(a < 0 && b < 0 && c < 0 && d < 0 ){
-       //  console.log(a, b, c, d);
-       // }else if(a > 0){
-       //  console.log(`${a} - положительное число`, b, c,d);
-       
-       // }else if(b > 0){
-       //  console.log(a, `${b} - положительное число`, c, d);
-       
-       // }else if(c > 0){
-       //  console.log(a, b,  `${c} - положительное число`, d);
-       
-       // }else if(d > 0){
-       //  console.log(a, b, c, `${d} - положительное число`,);
-       // }else {
-       //    console.log("проверка");
-       // }
-    
 
+
+       //  5-задача.
+      //   let a = prompt(`введите a`);
+      //    b = prompt(`введите b`),
+      //    c = prompt(`введите c`),
+      //    d = prompt(`введите d`);
+      //  if(a < 0 && b < 0 && c < 0 && d < 0 ){
+      //   alert(`${a}, ${b}, ${c}, ${d}`);
+      //  }else {
+      //     alert(false);
+      //  }
+    
 
 
 
