@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>hw2</title>
+    <title>Race</title>
     <link rel="stylesheet" href="../assets/style/style.css" />
     <link
       rel="stylesheet"
@@ -16,17 +16,41 @@
   </head>
   <body>
     <div class="container">
-      <div class="top">
-          <h1 class="area">Counter</h1>
-          <p class="count">0</p>
-      </div>
-      <div id="form">
-          <button class="btn decrease" type="submit">decrease</button>
-          <button class="btn reset" type="submit">Reset</button>
-          <button class="btn increase" type="submit">Increase</button>
+      <div class="wrapper">
+          <div class="wrapper__top">
+              <h1 class="wrapper__top__h">Кто первый доедет</h1>
+              <div class="wrapper__form">
+                  <h5 class="wrapper__top__h">Masofa</h5>
+                  <form id="form" class="form">
+                      <input id="km" type="number" placeholder="Введите расстояние в км">
+                      <button type="submit">Submit</button>
+                  </form>         
+              </div>
+          </div>
+          <div class="wrapper__cards">
+              <div class="wrapper__card">
+                  <img src="" alt="">
+                  <h5 class="title">Foot</h5>
+                  <p class="subtitle" id="piyoda"></p>
+              </div>
+              <div class="wrapper__card">
+                  <img src="" alt="">
+                  <h5 class="title">Bike</h5>
+                  <p class="subtitle" id="velik"></p>
+              </div>
+              <div class="wrapper__card">
+                  <img src="" alt="">
+                  <h5 class="title">Car</h5>
+                  <p class="subtitle" id="car"></p>
+              </div>
+              <div class="wrapper__card">
+                  <img src="" alt="">
+                  <h5 class="title">Plane</h5>
+                  <p class="subtitle" id="plane"></p>
+              </div>
+          </div>
       </div>
   </div>
-
     <script src="../script/app.js"></script>
   </body>
 </html>
