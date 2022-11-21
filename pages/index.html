@@ -1,56 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Race</title>
-    <link rel="stylesheet" href="../assets/style/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <div class="wrapper">
-          <div class="wrapper__top">
-              <h1 class="wrapper__top__h">Кто первый доедет</h1>
-              <div class="wrapper__form">
-                  <h5 class="wrapper__top__h">Masofa</h5>
-                  <form id="form" class="form">
-                      <input id="km" type="number" placeholder="Введите расстояние в км">
-                      <button type="submit">Submit</button>
-                  </form>         
-              </div>
-          </div>
-          <div class="wrapper__cards">
-              <div class="wrapper__card">
-                  <img src="" alt="">
-                  <h5 class="title">Foot</h5>
-                  <p class="subtitle" id="piyoda"></p>
-              </div>
-              <div class="wrapper__card">
-                  <img src="" alt="">
-                  <h5 class="title">Bike</h5>
-                  <p class="subtitle" id="velik"></p>
-              </div>
-              <div class="wrapper__card">
-                  <img src="" alt="">
-                  <h5 class="title">Car</h5>
-                  <p class="subtitle" id="car"></p>
-              </div>
-              <div class="wrapper__card">
-                  <img src="" alt="">
-                  <h5 class="title">Plane</h5>
-                  <p class="subtitle" id="plane"></p>
-              </div>
-          </div>
-      </div>
-  </div>
-    <script src="../script/app.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+<body>
+    <div class="wrapper">
+        <div class="wrapper__login">
+            <h1 class="wrapper__login__title">Client Login</h1>
+        </div>
+        <form>
+            <h3 class="form-title">Username</h3>
+            <input class="inp1" type="text" placeholder="name...">
+            <h3 class="form-title1">Password</h3>
+            <input class="inp2" type="password" placeholder="password" id="parol">
+            <a href="" class="eye" onclick="return passwordShowHide(this);"></a>
+        </form>
+        <h3 class="phone-title">Phone number</h3>
+        <div class="phone">
+            <form id="form">
+                <label for="" class="label">+998</label>
+                <input class="inp3" type="number" name="num" min="900000000" max="999999999" id="num">
+                <button id="btn">Submit</button>
+              </form>
+              <p class="output"></p>
+        </div>
+    </div>
+
+
+
+    <script src="/script/app.js"></script>
+</body>
 </html>
