@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(43, 145, 228);
+}
+.wrapper{
+    background: #fff;
+    max-width: 400px;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 30px 10px;
+}
+.task-input{
+    height: 50px;
+    position: relative;
+    padding: 0 30px;
+
+}
+.task-input input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 0 0 30px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+.bar{
+position: absolute;
+top: 34%;
+left: 40px;
+}
+.controls{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+    padding: 18px 25px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+.filter{
+    margin: 0 8px;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    gap: 15px;
+}
+.filter span.active{
+    color: rgb(43, 145, 228);
+}
+.clear-btn{
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 7px 13px;
+    background: rgb(43, 145, 228);
+    cursor: pointer;
+    font-size: 13px;
+    width: 130px;
+}
+.tasks{
+    margin: 20px 25px;
+}
+.task label{
+    display: flex;
+}
+.task label input{
+    margin-top: 6px;
+    margin-right: 12px;
+}
+.more{
+    cursor: pointer;
+    position: relative;
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+label p{
+    padding-left: 10px;
+}
+.p.checked{
+    text-decoration: line-through;
+}
+.task-more{
+    position: absolute;
+    width: 85px;
+    padding: 3px 0;
+    z-index: 2;
+    transform: scale(0);
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    display: flex;
+    transform-origin: top center;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
+
+
+}
+.more .task-more.show{
+    transform: scale(1);
+}
+.task-more li{
+    height: 25px;
+    font-size: 13px;
+    padding: 5px 15px;
+    margin-bottom: 2px;
+    justify-content: start;
+    
+}
+.task-more li:last-child{
+    margin-bottom: 0;
+}
+.task-more li:hover{
+background: #f5f5f5;
+}
+.li i{
+    padding-right: 8px;
+}
